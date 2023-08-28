@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+    {% for paragraph in paragraphs %}
+        <li>{{ paragraph.value }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

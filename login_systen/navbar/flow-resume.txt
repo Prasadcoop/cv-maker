@@ -1,0 +1,24 @@
+signup page
+    X
+    |
+    X
+sign in
+    x
+    |
+    X 
+add resume page
+    X 
+    |
+    X 
+list of all resume
+    X 
+    |
+    X 
+view single resume 
+    X 
+    | 
+    X 
+log out
+    X 
+    |
+    X

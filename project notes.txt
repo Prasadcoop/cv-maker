@@ -1,0 +1,71 @@
+activate virtual envirnment
+
+venv\Scripts\activate.bat
+
+views file for rendering html template
+urls  url connect to views method function
+
+create superuser
+py manage.py createsuperuser
+username :Prasad14
+password :12345
+
+views{
+
+views file for rendering html template
+posting data into user table
+The request object used to generate this response.
+render {
+render is basically a simple wrapper around a HttpResponse which renders a template,
+This function is a shortcut; it creates an HTML file by combining a specified HTML template and some data to insert in the template 
+}
+HttpResponse {
+HttpResponse to return other things as well in the response, not just rendering templates.
+}
+}
+
+take user input
+uname=request.POST.get('username')
+
+Django Models
+py manage.py makemigrations members
+
+create app in Django
+py manage.py startapp members
+py manage.py startapp crud
+
+init.py
+Import submodules
+Initialize top-level objects/variables (logger, database connections, configurations)
+
+add in app url
+path('index/',views.index,name='index'),
+
+main url
+path('', include("crud.urls")),
+
+add in setting of your app name
+
+models 
+py manage.py makemigrations crud
+
+class Product(models.Model):
+    name = models.CharField(max_length=255)
+    Ptype = models.CharField(max_length=255)
+    category = models.CharField(max_length=255)
+    price = models.CharField(max_length=255)
+    quantity = models.CharField(max_length=255)
+
+for bn laptop
+branch name - bn-django
+
+create new app note app
+
+py manage.py startapp note
+
+add the rest_framework and note_api apps to the INSTALLED_APPS
+create a database model that the API will use to perform
+Serializers in Django REST framework convert the object or list of objects returned 
+by the database into data types that frontend frameworks and API testing tools can understand.
+
+pip install django djangorestframework
